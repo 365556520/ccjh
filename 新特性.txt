@@ -278,7 +278,7 @@ QuickButton只显示主脚本的。
 举例：
 Cmd=!set s abcefghi;!Text [s.substr([s.find(e)],3)]
 Cmd=!set s 1,23,345,6789,90123;!Text [s.at(4).len()]
-
+!set s [uname];!Text [s.substr([s.find(()],8)]
 2、变量数组中，如果含有 键:值 类型的元素可以被视为字典。不能使用数字作为键。
 at函数可以根据键在字典中查找值。
 举例:

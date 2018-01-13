@@ -1,0 +1,19 @@
+/wield:装备
+/unwield:卸下
+/use:使用
+/get:拾取
+/drop:丢弃
+/kill:杀
+/sleep:睡觉
+/ask a
+/exercise:打坐
+/ask 疗伤
+/look:观察
+/cast force recover:吸气
+!sell
+/refuse none
+/apprentice:拜师
+/recruit:收徒
+/invite:邀请
+/enter $ID:回家
+/tune ad;/tune chat;/tune rumor;/tune party;/tune corps:关频

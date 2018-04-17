@@ -307,7 +307,7 @@ Cmd=!set a 等级:16;!Text [a.key()];!Text [a.value()];
 举例:
 Cmd=!set s 大米:20,小米:30,玉米:40;!Text [s.keys()];!Text [s.values()];
 Cmd=!set s 大米:20,小米:30,玉米:40;!for x in s.keys(),!Text [x];
-
+!set s 朱果:100,极品朱果:120,精品朱果:140;;!for x in s,!t x.keys(),!Give ,x.values();
 2.51:加入特殊变量[_alarm]，显示!alarm命令剩余的秒数。
 
 2.52:配合新版批量管理工具，显示对话菜单功能。

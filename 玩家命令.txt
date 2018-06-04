@@ -1,3 +1,5 @@
+!Drop 灰,all
+get @*灰* from #box
 !go 大理城星云湖畔
 !go 武当松林
 /expell

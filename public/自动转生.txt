@@ -1,0 +1,285 @@
+ [Setting]
+TrigerSetNum=1000
+TrigerShareNum=99
+ClsTime=999
+CircleNum=1
+WupinNum=99
+Name=$Name
+ID=$ID
+TransObj=tie
+
+[Filter]
+Filter_Num=11
+Filter_1=*胜了超难*
+Filter_2=*续捉鬼成功*
+Filter_3=*有倭寇在作*
+
+[Fight_Room]
+Fight_NUM=8
+Fight_1=*的战*
+-=======================
+[Goods]
+Goods_Num=99
+Goods_1=邪教*
+[Enemys]
+Enemys_Num=200
+Enemys_1=*的战*
+
+[Seek]
+Seek_NUM=10
+Seek_1=此次战斗耗时[time]秒，获得[exp]点经验。
+
+[Share_27]
+Msg=【系统】脚本读取完毕*
+Cmd=$c1;!go 逍遥林小木屋
+Obj=;;;;
+Tmr=350
+[Share_28]
+Msg=已经到达逍遥林小木屋*
+Cmd=/apprentice;!set 重生 1
+Obj=xue muhua;
+Tmr=350
+
+
+[Share_30]
+Msg=升级成功！
+Cmd=/upgrade;
+Obj=;;
+Tmr=350
+
+[Share_31]
+Msg=已经到达少林寺般若堂九部。
+Cmd=$c1;
+Obj=;
+Tmr=300
+
+
+
+[Circle_1]
+Cmd=!if [_场景]==千佛殿&&[teamcount(1)]>0,/join 0;
+Obj=@E;$ID;;
+Tmr=1000
+
+[Share_1]
+Msg=你进入了北帝庙。
+Cmd=!go>少林寺般若堂九部;
+Obj=;
+Tmr=500
+
+
+[TrigerSet_1]
+KEY=你设置环境变量：重生 为 1。
+TrigerNum=99
+
+[Triger1_1]
+Msg=你设置环境变量：重生 为 1。
+Cmd=!sset exp 0;!go>少林寺般若堂九部;
+Obj=;
+Tmr=400
+
+[Triger1_2]
+Msg=此次战斗耗时*秒，获得*点经验。
+Cmd=!if>[exp]>0,$c0;!if>[exp]>0,!go>洛阳西;
+Obj=;;
+Tmr=400
+
+[Triger1_3]
+Msg=已经到达洛阳西。
+Cmd=/ask_cs1;/stname1 21;/stname2 21;/stname3 21;/stname4 21;/cs1;
+Obj=xu xiake;xu xiake;xu xiake;xu xiake;xu xiake;xu xiake;
+Tmr=500
+
+
+[Triger1_9]
+Msg=*恭喜你！第１次重生成功。
+Cmd=!set 重生 2;
+Obj=xu xiake;
+Tmr=400
+
+
+
+[TrigerSet_2]
+KEY=你设置环境变量：重生 为 2。
+TrigerNum=99
+
+[Triger2_1]
+Msg=你设置环境变量：重生 为 2。
+Cmd=!sset exp 0;!go>少林寺般若堂九部;
+Obj=;
+Tmr=400
+
+[Triger2_2]
+Msg=此次战斗耗时*秒，获得*点经验。
+Cmd=!if>[exp]>0,$c0;!if>[exp]>0,!go>洛阳西;
+Obj=;;
+Tmr=400
+
+[Triger2_3]
+Msg=已经到达洛阳西。
+Cmd=/ask_cs2;/stname21 21;/stname22 21;/stname23 21;/stname24 21;/cs2;
+Obj=xu xiake;xu xiake;xu xiake;xu xiake;xu xiake;xu xiake;
+Tmr=500
+
+Tmr=400
+[Triger2_9]
+Msg=*恭喜你！第２次重生成功。
+Cmd=!set 重生 3;
+Obj=xu xiake;
+Tmr=400
+
+
+
+
+
+[TrigerSet_3]
+KEY=你设置环境变量：重生 为 3。
+TrigerNum=99
+
+[Triger3_1]
+Msg=你设置环境变量：重生 为 3。
+Cmd=!sset exp 0;!go>少林寺般若堂九部;
+Obj=;
+Tmr=400
+
+[Triger3_2]
+Msg=此次战斗耗时*秒，获得*点经验。
+Cmd=!if>[exp]>0,$c0;!if>[exp]>0,!go>洛阳西;
+Obj=;;
+Tmr=400
+
+[Triger3_3]
+Msg=已经到达洛阳西。
+Cmd=/ask_cs3;/stname31 21;/stname32 21;/stname33 21;/stname34 21;/cs3;
+Obj=xu xiake;xu xiake;xu xiake;xu xiake;xu xiake;xu xiake;
+Tmr=500
+[Triger3_9]
+Msg=*恭喜你！第３次重生成功。
+Cmd=!set 重生 4;
+Obj=xu xiake;
+Tmr=400
+
+
+[TrigerSet_4]
+KEY=你设置环境变量：重生 为 4。
+TrigerNum=99
+
+[Triger4_1]
+Msg=你设置环境变量：重生 为 4。
+Cmd=!sset exp 0;!go>少林寺般若堂九部;
+Obj=;
+Tmr=400
+
+[Triger4_2]
+Msg=此次战斗耗时*秒，获得*点经验。
+Cmd=!if>[exp]>0,$c0;!if>[exp]>0,!go>洛阳西;
+Obj=;;
+Tmr=400
+
+[Triger4_3]
+Msg=已经到达洛阳西。
+Cmd=/ask_cs4;/stname41 21;/stname42 21;/stname43 21;/stname44 21;/cs4;
+Obj=xu xiake;xu xiake;xu xiake;xu xiake;xu xiake;xu xiake;
+Tmr=500
+
+[Triger4_9]
+Msg=*恭喜你！第４次重生成功。
+Cmd=!set 重生 完毕;
+Obj=xu xiake;
+Tmr=400
+
+
+[TrigerSet_5]
+KEY=你设置环境变量：重生 为 完毕。
+TrigerNum=99
+
+[Triger5_1]
+Msg=你设置环境变量：重生 为 完毕。
+Cmd=!go>少林寺般若堂九部;
+Obj=;
+Tmr=400
+
+
+
+
+
+
+[Share_15]
+Msg=你的内力增加了１点。
+
+Cmd=/ask_neili;
+Obj=xu xiake;
+Tmr=400
+[Share_16]
+Msg=你的先天力量增加了１点。
+Cmd=/tian1;
+Obj=xu xiake;
+Tmr=330
+[Share_17]
+Msg=你的先天体质增加了１点。
+Cmd=/tian2;
+Obj=xu xiake;
+Tmr=330
+[Share_18]
+Msg=你的先天智慧增加了１点。
+Cmd=/tian3;
+Obj=xu xiake;
+Tmr=330
+[Share_19]
+Msg=你的先天敏捷增加了１点。
+
+Cmd=/tian4;
+Obj=xu xiake;
+Tmr=330
+
+
+
+
+[QuickButton_1]
+Key=关谣
+Cmd=/tune rumor;/tune chat;/refuse combat;
+Obj=;
+[QuickButton_2]
+Key=关帮
+Cmd=/tune party;
+Obj=;
+[QuickButton_3]
+Key=关交
+Cmd=/tune ad;
+Obj=;
+[QuickButton_4]
+Key=关闲
+Cmd=/tune chat;
+Obj=;
+[QuickButton_5]
+Key=重载
+Cmd=!Load(.\SL抱大腿不睡觉.ini);
+Obj=;
+[QuickButton_6]
+Key=白衣殿
+Cmd=!go 少林寺白衣殿;
+Obj=;
+[QuickButton_7]
+Key=地藏
+Cmd=$t1;$c1;!go>少林寺[cj];
+Obj=;
+[QuickButton_8]
+Key=定位
+Cmd=!set cj [_场景];
+Obj=;
+[QuickButton_9]
+Key=升级
+Cmd=/upgrade;
+Obj=;
+[QuickButton_10]
+Key=给tj
+Cmd=!Give 百炼钢锭,30
+Obj=pub_tiejiang;
+[QuickButton_11]
+Key=给
+Cmd=!Give 百炼钢锭,30
+Obj=160;
+
+[QuickButton_12]
+Key=洛阳
+Cmd=!go 洛阳西;
+Obj=;

@@ -1,3 +1,6 @@
+
+get @魔*奇门道袍<灰> from #box
+!Text [count(魔*奇门道袍<灰>)]
 !Drop 灰,all
 get @*灰* from #box
 !go 大理城星云湖畔

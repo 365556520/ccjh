@@ -1,4 +1,4 @@
-!Load(public\新只护张无敌护教.ini);
+
 get @魔*奇门道袍<灰> from #box
 !Text [count(魔*奇门道袍<灰>)]
 !Drop 灰,all
